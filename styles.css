@@ -4,7 +4,7 @@ body {
     color: #1C2329;
 }
 .avto{
-    background: url('сss/fon.png');
+    background: url('img/fon.png');
     width: 1920px; 
     height: 800px;
 }
@@ -13,6 +13,8 @@ header {
     background-color: rgba(28, 35, 41, 0.89);
     color: white;
     padding: 10px 0;
+    text-align: center;
+    align-content: center;
 }
 
 .header-container {
@@ -25,6 +27,17 @@ header {
     height: 108px;
     font-weight: bold;
 }
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 
 .logo {
     width: 72px;
@@ -48,6 +61,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+
 }
 
 nav ul li {
@@ -75,99 +89,100 @@ nav ul li a {
     color: #ffffff;
 }
 /* Блок с информацией */
-.second-block { 
-    position: relative; 
-    display: flex; 
-    background-size: cover; 
-    height: 800px; 
-} 
-
-.second-block h1 { 
-    font-size: 80px; 
+.second-block {
+    position: relative;
     display: flex;
-   
-} 
-
-.text-block { 
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    width: 1188px; 
-    height: 670px; 
-    background-color: rgba(28, 35, 41, 0.6); 
-    display: flex; 
-    flex-direction: column; 
-    clip-path: polygon(0 0, 100% 0, 80% 100%, 0 120%); 
-    z-index: 1; 
-} 
-
-.text-block-top { 
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    width: 1077px; 
-    height: 670px; 
-    background-color: rgba(28, 35, 41, 0.6); 
-    clip-path: polygon(0 0, 100% 0, 77% 100%, 0 120%); 
-    z-index: 2; 
-    color:#ffffff; 
+    background-size: cover;
+    height: 800px;
 }
-.help{
+
+.second-block h1 {
+    font-size: 80px;
+}
+
+.text-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1188px;
+    height: 670px;
+    background-color: rgba(28, 35, 41, 0.6);
+    display: flex;
+    flex-direction: column;
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0 120%);
+    z-index: 1;
+}
+
+.text-block-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1077px;
+    height: 670px;
+    background-color: rgba(28, 35, 41, 0.6);
+    clip-path: polygon(0 0, 100% 0, 77% 100%, 0 120%);
+    z-index: 2;
+    color: #ffffff;
+}
+
+.help {
     padding-left: 200px;
 }
-.text-block-top h1{
+
+.text-block-top h1 {
     font-size: 80px;
-    
 }
-.text-block-top p{
+
+.text-block-top p {
     font-size: 30px;
 }
 
-.buttonLeft { 
+.buttonLeft {
     border-radius: 10px;
     overflow: hidden;
     background: #ffffff;
     position: relative;
-    line-height: 70px; 
-     color: #1C2329;
+    line-height: 70px;
+    color: #1C2329;
     margin-right: 40px;
     width: 290px;
     height: 70px;
-} 
- 
-.buttonLeft::before { 
-    content: ''; 
-    position: absolute;  
-    right: 0;  
-    bottom: 0; 
+}
+
+.buttonLeft::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
     padding-right: 10px;
-    width: 100%; 
-    height: 100%; 
-    transform: translateX(100%);  
-    background:#FF6642; 
-    transition: transform .2s ease-in-out;   
-} 
- 
-.buttonLeft:hover::before { 
-    transform: translateX(0);    
-} 
- 
-.buttonLeft span { 
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+    background: #FF6642;
+    transition: transform .2s ease-in-out;
+}
+
+.buttonLeft:hover::before {
+    transform: translateX(0);
+}
+
+.buttonLeft span {
     z-index: 1;
     font-size: 25px;
     display: block;
     position: relative;
-    top: 50%; 
-    transform: translateY(-50%); 
+    top: 50%;
+    transform: translateY(-50%);
     padding-left: 30px;
 }
 
-.wrapper{
+.wrapper {
     width: 300px;
     height: 70px;
     background: #FF6642;
     border-radius: 10px;
 }
+
 /* Блок приемущества */
 .third-block {
     position: relative;
@@ -253,7 +268,7 @@ nav ul li a {
 }
 /* Карта */
 .map {
-    background: url('сss/karta.png'); 
+    background: url('img/karta.png'); 
     width: 1520px;
     height: 900px;
     margin-right: 200px;
