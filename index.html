@@ -11,46 +11,44 @@
 </head>
 <body>
 <div class="avto">
+    <!-- Шапка -->
     <header>
         <div class="header-container">
             <div class="navig">
-            <img src="сss\logo.png" class="logo"></img>
-            <nav class="menu">
-                <ul>
-                    <li><a href="#about">О нас</a></li>
-                    <li><a href="#services">Услуги</a></li>
-                    <li><a href="#reviews">Отзывы</a></li>
-                    <li><a href="#contacts">Контакты</a></li>
-                </ul>
-            </nav>
-        </div>
+                <img src="сss\logo.png" class="logo" alt="Лого">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
             <div class="contacts">
-                <div class="phone">+ 7901 271-31-80(Ярославль)</div>
-                <div class="phone">+ 7 950 040-35-25(Санкт-Петербург)</div>
+                <a  class="phone" href="tel:+ 7901 271-31-80(Ярославль)">+ 7901 271-31-80(Ярославль)</a>
+                <a  class="phone" href="tel:+ 7 950 040-35-25(Санкт-Петербург)">+ 7 950 040-35-25(Санкт-Петербург)</a>
+                
             </div>
         </div>
     </header>
-
+    <main>
+    <!-- Информация-->
     <section class="second-block">
         <div class="text-block">
-        <div class="text-block-top">
-            <div class="help">
-            <h1>Твой Автоподбор</h1>
-            <p>Поможем вам найти <b>идеальное авто,</b> <br>которое подойдет именно <b>вам</b></p>
-           
-            <div class="wrapper"> 
-                <div class="buttonLeft"><span><b>Оставить заявку</b></span></div> 
+            <div class="text-block-top">
+                <div class="help">
+                    <h1>Твой Автоподбор</h1>
+                    <p>Поможем вам найти <b>идеальное авто,</b> <br>которое подойдет именно <b>вам</b></p>
+                    <div class="wrapper">
+                        <div class="buttonLeft"><span><b>Оставить заявку</b></span></div>
+                    </div>
+                </div>
             </div>
-        
         </div>
-        </div>
-        
-    </div>
     </section>
-    
 </div>
-
-    <!-- Третий блок -->
+    <!-- Приемущества -->
     <section class="third-block">
         <div class="info">
             <h1>Работаем по договору</h1>
@@ -59,7 +57,7 @@
         </div>
     </section>
 
-    <!-- Блок о нас -->
+    <!-- О нас -->
     <section class="about-block">
         <div class="about-content">
             <div class="about-text">
@@ -72,7 +70,6 @@
         </div>
     </section>
 
-    <!-- Пятый блок -->
     <section class="stats-block">
         <div class="stat">
             <h3>34 874</h3>
@@ -87,18 +84,21 @@
             <p>Человек обращались <br>за услугами</p>
         </div>
     </section>
-
-   <div class="cart">
-        <div class="nadpis">
+    
+    <!-- Карта -->
+   <section class="map">
+        <div class="signature">
             <div class="red">
                 <br> 
             </div>
         <p>Вы можете расширить выбор при поиске автомобиля,
              чтобы подобрать, действительно, достойный вариант</p>
         </div>
-    </div>
+    </section>
 
-    <div class="service-block">
+     <!-- Услуги -->
+
+    <section class="service-block">
         <h1>Услуги</h1>
         <div class="mini-service">
             <div class="levo">
@@ -134,9 +134,11 @@
         <div class="red"> <br></div>
         <p>Предоставляем гарантию на каждый автомобиль в течение двух месяцев, чтобы подарить вам уверенность в своем выборе</p>
     </div>
-    </div>
+    </section>
 
-    <div class="inspection-block">
+     <!-- Осмотр автомоббиля -->
+
+    <section class="inspection-block">
         <div class="inspection-details">
             <h1>Осмотр автомобиля</h1>
             <button class="accordion">Кузов</button>
@@ -197,13 +199,16 @@
 
         <img src="сss\car.jpeg" alt="Автомобиль" >
         
-    </div>
+    </section>
 
-    <div class="otz">
-        <div class="otz-container">
+     <!-- Отзывы -->
+     <section class="estimation">
+        <div class="estimation-container">
         <h1>Отзывы клиентов</h1>
     <div class="reviews">
-        <button class="arrow-left" onclick="prevReview()"><</button>
+        <button id="prev"><b><</b></button>
+        <div id="carousel">
+            <div id="content">
         <div class="reviews-container">
 
         <div class="feedback">
@@ -239,9 +244,23 @@
         </div>
             <p>Текст.</p>
         </div>
+        <div class="feedback">
+            <h1>Имя</h1>
+            <div class="stars">
+                <img src="сss\starred.png" alt="звезда красная" >
+                <img src="сss\starred.png" alt="звезда красная" >
+                <img src="сss\starred.png" alt="звезда красная" >
+                <img src="сss\star.png" alt="звезда" >
+                <img src="сss\star.png" alt="звезда" >
+        </div>
+            <p>Текст.</p>
+        </div>
 
         </div>
-        <button class="arrow-right" onclick="nextReview()">></button> 
+    </div>
+    </div>
+    
+        <button id="next"><b>></b></button>
     </div>
     
     </div>
@@ -259,9 +278,9 @@
         
     </div>
     </div>
-
-    </div>
-<div>
+    </section>
+     <!-- Примеры -->
+<section>
     <div class="proverka">
 
         <h1>Автомобили, проверенные нами</h1>
@@ -278,9 +297,12 @@
         <div class="circle"></div>
         <div class="circle"></div>
       </div>
-</div>
+</section>
 
-<div class="vopros">
+
+ <!-- Обратная связь -->
+
+<section class="vopros">
 <div class="connection"> 
 <h1>Остались вопросы?</h1>
 <div class="arrow">
@@ -302,10 +324,11 @@
         </div>
     </form>
 </div>
-    </div>
+    </section>
+</main>
 
-    <!-- Десятый блок -->
-<footer>
+    <!-- Подвал -->
+<footer class="main-footer">
     <div class="footer-container">
         <div class="footer-logo">
             <img src="сss\logo.png" class="logotip" alt="логотип" >
@@ -345,11 +368,7 @@
     </div>
 </footer>
 
-    
-    
 
-    
 
-   
 </body>
 </html>

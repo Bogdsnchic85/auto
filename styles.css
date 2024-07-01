@@ -3,7 +3,12 @@ body {
     font-family: 'Montserrat';
     color: #1C2329;
 }
-
+.avto{
+    background: url('сss/fon.png');
+    width: 1920px; 
+    height: 800px;
+}
+/* Шапка */
 header {
     background-color: rgba(28, 35, 41, 0.89);
     color: white;
@@ -14,28 +19,29 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40px; 
+    gap: 40px;
     font-size: 20px;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding: 0 200px;
     height: 108px;
     font-weight: bold;
 }
+
 .logo {
-    width: 72px; 
-    height: 68px; 
-    padding: 20px ; 
-  }
-  .navig{
+    width: 72px;
+    height: 68px;
+    padding: 20px;
+}
+
+.navig {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     gap: 40px;
-  }
+}
 
-  .menu{
-    margin-left: -40px;
-  }
+.menu {
+    align-self: flex-start;
+}
 
 nav ul {
     list-style: none;
@@ -54,22 +60,21 @@ nav ul li a {
 }
 
 .contacts {
-    text-align: left; 
-    gap: 40px; 
-    margin-top: 10px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .contacts .phone {
-    margin: 5px 0;
-    margin-bottom: 20px;
-    
+    margin: 5px 0 20px 0;
+    text-decoration: none;
+    color: #ffffff;
 }
-.avto{
-    background: url('сss/fon.png');
-    width: 1920px; 
-    height: 800px;
-}
+/* Блок с информацией */
 .second-block { 
     position: relative; 
     display: flex; 
@@ -163,7 +168,7 @@ nav ul li a {
     background: #FF6642;
     border-radius: 10px;
 }
-
+/* Блок приемущества */
 .third-block {
     position: relative;
     background: #FF6642;
@@ -187,7 +192,7 @@ nav ul li a {
 .info h1 {
     font-size: 30px;
 }
-
+/* О нас */
 .about-block {
     display: flex;
     margin-left: 200px;
@@ -246,8 +251,8 @@ nav ul li a {
     font-size: 25px;
     text-align: left; 
 }
-
-.cart {
+/* Карта */
+.map {
     background: url('сss/karta.png'); 
     width: 1520px;
     height: 900px;
@@ -260,7 +265,7 @@ nav ul li a {
 }
 
 
-.nadpis{
+.signature{
     position: absolute; 
     bottom: 0; 
     left: 0; 
@@ -285,7 +290,7 @@ nav ul li a {
     padding-top: 20px;
 }
 
-
+/* Услуги */
 .service-block {
     display: flex;
     flex-direction: column;
@@ -368,7 +373,7 @@ nav ul li a {
     padding-top: 20px;
 }
 
-/* блок с кузовом */
+/* Осмотр автомобиля */
 
 .inspection-block {
         display: flex;
@@ -480,18 +485,40 @@ nav ul li a {
         background:#1C2329;
         border-radius: 10px;
     }
+/* Отзывы */
+#carousel {
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  
+  #carousel::-webkit-scrollbar {
+    height:100% ;
+  }
+  
+ 
+  
+  #content {
+    display: grid;
+    grid-gap: 16px;
+    grid-auto-flow: column;
+    margin: auto;
+    box-sizing: border-box;
+    width: 1520px;
+  }
+  
 
-.otz{
+  .estimation{
     background-color: #1C2329;
     height: 769px;
     margin-top: 100px;
 }
-.otz h1{
+.estimation h1{
     font-size: 40px;
     padding-top: 50px;
     color: #ffffff;
 }
-.otz-container{
+.estimation-container{
     padding-left: 200px;
     padding-right: 200px;
 }
@@ -531,7 +558,7 @@ background-color: #ffffff;
     width: 30px;
     height: 30px;
 }
-.otz button{
+.estimation button{
     width:60px;
     height: 40px;
     margin-top: 150px;
@@ -592,7 +619,7 @@ background-color: #ffffff;
     margin-left: 10px;
 }
 
-
+/* Примеры */
 .proverka h1{
     font-size: 40px;
     margin-left: 200px;
@@ -642,7 +669,7 @@ background-color: #ffffff;
     border-radius: 50%;
     background-color:#1C2329;
   }
-
+/*Обратная связь*/
 .vopros{
     margin-top: 100px;
     background-color:#FF6642;
@@ -739,6 +766,7 @@ label{
 .question label{
     padding-left: 40px;
 }
+/* Подвал */
 .footer-container{
     display: flex;
     background-color: #F0F0F0;
